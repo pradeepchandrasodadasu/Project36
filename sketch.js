@@ -47,8 +47,10 @@ function draw() {
   if(lastFed !== undefined){ 
     fill("red");
     textSize(15);
+    
     if(lastFed > 12){
-      text("last fed: "+ lastFed-12+" PM",500,65);
+      calc_time = lastFed-12
+      text("last fed: "+ calc_time+" PM",500,65);
     }else if(lastFed < 12){
       text("last fed: "+ lastFed +" AM",500,65);
     }else{
@@ -57,9 +59,6 @@ function draw() {
     }
   }
 
-  
-  
-  
   drawSprites();
 }
 
