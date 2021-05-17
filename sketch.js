@@ -49,7 +49,7 @@ function draw() {
     textSize(15);
     
     if(lastFed > 12){
-      calc_time = lastFed-12
+      calc_time = lastFed-12;
       text("last fed: "+ calc_time+" PM",380,30);
     }else if(lastFed < 12){
       text("last fed: "+ lastFed +" AM",380,30);
