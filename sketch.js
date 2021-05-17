@@ -50,12 +50,12 @@ function draw() {
     
     if(lastFed > 12){
       calc_time = lastFed-12
-      text("last fed: "+ calc_time+" PM",500,65);
+      text("last fed: "+ calc_time+" PM",380,30);
     }else if(lastFed < 12){
-      text("last fed: "+ lastFed +" AM",500,65);
+      text("last fed: "+ lastFed +" AM",380,30);
     }else{
       //hour value is 12pm
-      text("last fed: "+ lastFed +" PM",500,65);
+      text("last fed: "+ lastFed +" PM",380,30);
     }
   }
 
